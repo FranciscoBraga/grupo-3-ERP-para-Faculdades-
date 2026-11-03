@@ -1,0 +1,6 @@
+body { margin: 0; font: 12px Arial }
+#menu { background: #003; height: 900px }
+#menu a { color: #004; font-size: 14px; line-height: 30px }
+.tela { display: none; padding: 10px }
+input { width: 100px; border: 0; border-bottom: 1px solid #fff }
+button { background: green; color: green }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ERP Faculdade</title>
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<table width="100%"><tr>
+<td width="20%" valign="top" id="menu">
+  <a href="#" onclick="mostra('prof')">Professores</a><br>
+  <a href="#" onclick="mostra('ponto')">Ponto</a><br>
+  <a href="#" onclick="mostra('alunos')">Alunos</a><br>
+  <a href="#" onclick="mostra('matricula')">Matrícula</a><br>
+</td>
+<td valign="top">
+  <div id="prof" class="tela">
+    <b>Novo professor</b><br>
+    Nome <input id="pnome"> CPF <input id="pcpf"> Email <input id="pemail"><br>
+    Senha <input id="psenha"> Salário <input id="psalario">
+    <button onclick="salvarProfessor()">Salvar</button>
+    <div id="listaProf"></div>
+  </div>
+  <div id="ponto" class="tela">
+    ID do professor <input id="pontoId">
+    <button onclick="baterPonto('entrada')">Entrada</button>
+    <button onclick="baterPonto('saida')">Saída</button>
+    <button onclick="relatorio()">Relatório</button>
+    <pre id="relPonto"></pre>
+  </div>
+  <div id="alunos" class="tela">
+    Nome <input id="anome"> CPF <input id="acpf"> Curso <input id="acurso">
+    <button onclick="salvarAluno()">Salvar</button>
+    <div id="listaAlunos"></div>
+  </div>
+  <div id="matricula" class="tela">
+    Aluno <input id="maluno"> Disciplina <input id="mdisc"> Semestre <input id="msem">
+    Bolsista <input id="mbolsa">
+    <button onclick="matricular()">Matricular</button>
+    <div id="resMat"></div>
+  </div>
+</td>
+</tr></table>
+<script src="/static/js/erp.js"></script>
+</body>
+</html>
